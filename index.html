@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration Hall of Vintage</title>
+  </head>
+  <body>
+    <!-- Header section -->
+    <header>
+      <h1>Welcome to the Vintage Hall of Records</h1>
+    </header>
+
+    <!-- Ordered List with Roman Numerals -->
+    <section>
+      <h2>Steps to Enter the Vintage Realm</h2>
+      <ol type="I">
+        <li>Receive thine invitation</li>
+        <li>Dress thyself in stripes and checks</li>
+        <li>Walk ye with elegance</li>
+        <li>Speak with grace and antiquity</li>
+        <li>Register thy presence below</li>
+      </ol>
+    </section>
+
+    <!-- External Image from Pexels -->
+    <section>
+      <h2>Vintage Inspiration</h2>
+      <img
+        src="https://images.pexels.com/photos/1704120/pexels-photo-1704120.jpeg"
+        alt="Vintage Classic Style"
+        width="600"
+      />
+    </section>
+
+    <!-- Table of Contacts -->
+    <section>
+      <h2>Hall of Vintage Contacts</h2>
+      <table border="1" cellpadding="8" cellspacing="0">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Address</th>
+            <th>Mobile</th>
+            <th>Email</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Sir John Pembroke</td>
+            <td>12 Lancaster Street, York</td>
+            <td>+44 7123 456789</td>
+            <td>john.pembroke@example.com</td>
+          </tr>
+          <tr>
+            <td>Lady Eleanor Grey</td>
+            <td>7 Oxford Crescent, Bath</td>
+            <td>+44 7345 678910</td>
+            <td>eleanor.grey@example.com</td>
+          </tr>
+          <tr>
+            <td>Lord Marcus Thorne</td>
+            <td>45 Regent Road, London</td>
+            <td>+44 7567 112233</td>
+            <td>marcus.thorne@example.com</td>
+          </tr>
+          <tr>
+            <td>Miss Lydia Bennet</td>
+            <td>2 Chapel Lane, Derby</td>
+            <td>+44 7988 334455</td>
+            <td>lydia.bennet@example.com</td>
+          </tr>
+          <tr>
+            <td>Baron Harold Wentworth</td>
+            <td>89 Manor Grove, Leeds</td>
+            <td>+44 7700 998877</td>
+            <td>harold.wentworth@example.com</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- Registration Form -->
+    <section>
+      <h2>Register Thyself, Noble Visitor</h2>
+      <form action="/submit-registration" method="POST">
+        <!-- Name Field -->
+        <label for="name">Full Name:</label><br />
+        <input
+          type="text"
+          id="name"
+          name="name"
+          placeholder="Enter thy full name"
+          required
+        /><br /><br />
+
+        <!-- Email Field -->
+        <label for="email">Email Address:</label><br />
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="example@domain.com"
+          required
+        /><br /><br />
+
+        <!-- Password Field -->
+        <label for="password">Password:</label><br />
+        <input
+          type="password"
+          id="password"
+          name="password"
+          placeholder="Create thy secret word"
+          minlength="6"
+          required
+        /><br /><br />
+
+        <!-- Date Field -->
+        <label for="dob">Date of Birth:</label><br />
+        <input type="date" id="dob" name="dob" required /><br /><br />
+
+        <!-- Dropdown Menu -->
+        <label for="title">Title:</label><br />
+        <select id="title" name="title" required>
+          <option value="">Choose thy noble title</option>
+          <option value="sir">Sir</option>
+          <option value="lady">Lady</option>
+          <option value="lord">Lord</option>
+          <option value="miss">Miss</option>
+          <option value="baron">Baron</option></select
+        ><br /><br />
+
+        <!-- Radio Buttons -->
+        <label>Preferred Attire:</label><br />
+        <input
+          type="radio"
+          id="stripes"
+          name="attire"
+          value="stripes"
+          required
+        />
+        <label for="stripes">Stripes</label><br />
+        <input type="radio" id="checks" name="attire" value="checks" />
+        <label for="checks">Checks</label><br /><br />
+
+        <!-- Checkboxes -->
+        <label>Vintage Preferences:</label><br />
+        <input
+          type="checkbox"
+          id="clothes"
+          name="preferences"
+          value="clothes"
+        />
+        <label for="clothes">Clothes</label><br />
+        <input type="checkbox" id="cars" name="preferences" value="cars" />
+        <label for="cars">Cars</label><br />
+        <input
+          type="checkbox"
+          id="furniture"
+          name="preferences"
+          value="furniture"
+        />
+        <label for="furniture">Furniture</label><br /><br />
+
+        <!-- Submit Button -->
+        <button type="submit">Submit Registration</button>
+      </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <p>Written and preserved by the Vintage Order &copy; 2025</p>
+      <p>
+        For queries, email
+        <a href="mailto:vintage@dominion.com">vintage@dominion.com</a>
+      </p>
+    </footer>
+  </body>
+</html>
